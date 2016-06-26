@@ -26,11 +26,10 @@
     }
   },
   "production": {
-    "username": "update me",
-    "password": "update me",
-    "database": "update me",
-    "host": "update me",
-    "dialect": "update me",
+    "username": null,
+    "password": null,
+    "database": "auntie_production",
+    "dialect": "postgres",
     "logging": false,
     "define": {
       "underscored": true,
