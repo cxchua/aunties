@@ -28,7 +28,7 @@
   "production": {
     "username": null,
     "password": null,
-    "database": "auntie_production",
+    "database": "auntie",
     "dialect": "postgres",
     "logging": false,
     "define": {
