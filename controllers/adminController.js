@@ -1,13 +1,6 @@
 var models = require('../models/index');
 
 
-function getUsers(req, res) {
-  models.User.findAll({})
-  .then(function(users){
-    res.json(users)
-  })
-}
-
 function postAvailabilityCheck(req, res) {
   models.Availability.find({
     where:{
@@ -45,7 +38,6 @@ function postAvailabilityCheck(req, res) {
 
 module.exports = {
   postAvailabilityRegistration:   postAvailabilityRegistration,
-  getRoot: getRoot
 
 
 }

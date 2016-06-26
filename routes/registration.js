@@ -32,6 +32,9 @@ router.route('/logout')
 router.route('/api/changepassword')
   .post(usersController.changePassword)
 
+router.route('/users')
+  .get(usersController.getUsers)
+
 //=============== End of registration routes ========================
 
 module.exports = router

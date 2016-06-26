@@ -156,11 +156,20 @@ function changePassword(req, res, next) {
   })(req, res, next);
 }
 
+function getUsers(req,res){
+  models.User.findAll({})
+  .then(function(users){
+    return res.json(users)
+  })
+}
+
+
 module.exports = {
   getLogin: getLogin,
   postLogin:  postLogin,
   getSignup: getSignup,
   postSignup: postSignup,
   getLogout: getLogout,
-  changePassword: changePassword
+  changePassword: changePassword,
+  getUsers: getUsers
 }
