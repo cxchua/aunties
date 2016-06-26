@@ -1,6 +1,10 @@
 var models = require('../models/index');
 
 
+function getRoot(req, res) {
+  res.json("hey there cutie")
+}
+
 function postAvailabilityCheck(req, res) {
   models.Availability.find({
     where:{
@@ -38,6 +42,7 @@ function postAvailabilityCheck(req, res) {
 
 module.exports = {
   postAvailabilityRegistration:   postAvailabilityRegistration,
+  getRoot: getRoot
 
 
 }

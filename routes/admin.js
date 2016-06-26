@@ -16,6 +16,8 @@ var adminController     = require('../controllers/adminController');
 router.route('/admin/availabilitycheck')
   .post(adminController.postAvailabilityCheck)
 
+router.route('/')
+  .get(adminController.getRoot)
 
 //=============== End of registration routes ========================
 
