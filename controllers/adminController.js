@@ -1,8 +1,11 @@
 var models = require('../models/index');
 
 
-function getRoot(req, res) {
-  res.json("hey there cutie")
+function getUsers(req, res) {
+  models.User.findAll({})
+  .then(function(users){
+    res.json(users)
+  })
 }
 
 function postAvailabilityCheck(req, res) {
